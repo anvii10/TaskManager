@@ -28,11 +28,3 @@ A console-based task management system in Java allowing users to add, view, edit
 ```java Main```
 
 
-## Testing
-- Add, edit, and delete tasks.
-- Mark tasks as completed.
-- Check filtering by priority, today’s tasks, and overdue tasks.
-- Verify summary counts.
-
-## Screenshots
-Add images from `screenshots/` folder here.
