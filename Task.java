@@ -51,4 +51,19 @@ public class Task {
     public static String header() {
         return "ID|TITLE|DESCRIPTION|PRIORITY|DEADLINE|STATUS|CREATED";
     }
+
+
+@Override
+public String toString() {
+    String dl = (deadline == null) ? "None" : deadline.format(DF);      // DF from your class
+    String created = (createdDate == null) ? "Unknown" : createdDate.format(DF);
+
+    return "Task ID: " + id +
+           "\nTitle: " + (title == null ? "" : title) +
+           "\nDescription: " + (description == null ? "" : description) +
+           "\nPriority: " + (priority == null ? "N/A" : priority) +
+           "\nDeadline: " + dl +
+           "\nStatus: " + (status == null ? "N/A" : status) +
+           "\nCreated: " + created;
+}
 }
