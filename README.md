@@ -104,25 +104,83 @@ Git & GitHub for version control
 
 ```java Main```
 
-**Testing** 
+**Testing Instructions**
 
-The Personal Task Manager was tested manually using different inputs to ensure all features work correctly. All tests were performed on Windows using VS Code and JDK 17. 
+**Start the Application**
 
+Open the project in your IDE (VS Code/IntelliJ/Eclipse).
 
-**Test Case Summary**
-1. Tested adding, editing, deleting, and completing tasks → working correctly.
+Run the main class.
 
-2. Verified task filtering by priority, today’s date, and overdue tasks → all passed.
+Make sure the menu/options are displayed without errors.
 
-3. Summary report displayed correct task counts → passed.
+**Add Task Test**
 
-4. File I/O tested by restarting program → tasks loaded successfully.
+Choose the option “Add Task”.
 
-5. Invalid inputs (wrong date, wrong menu option) handled safely.
+Enter task title, description, due date, and priority.
 
-6. No crashes or logical errors found during testing.
-   
-**Testing Conclusion**
+Verify the task is added to the list.
 
-All features function correctly, including task creation, editing, deletion, filtering, and file storage. The program handles errors well and is stable for use.
+Try entering empty fields → System should show an error.
+
+**View Tasks**
+
+Choose “View All Tasks”.
+
+Check if all tasks are displayed with correct data (ID, title, status, priority).
+
+Confirm the order (sorted or unsorted based on your implementation).
+
+**Update Task**
+
+Choose “Update Task” and select an existing task ID.
+
+Modify fields like title, description, or priority.
+
+Verify the updated details show correctly in task list.
+
+Check invalid ID handling.
+
+**Mark Task as Completed**
+
+Select a task and mark it as “Completed”.
+
+Check that the status changes from Pending → Completed.
+
+Ensure completed tasks remain visible but marked.
+
+**Delete Task**
+
+Choose the option to delete a task by ID.
+
+Verify the task is removed from the list.
+
+Try deleting a non-existing ID → Should show an error message.
+
+Search / Filter Test (If implemented)
+
+Search tasks by title or priority.
+
+Confirm only matching tasks appear.
+
+Data Persistence Test (If file-based storage exists)
+
+Add tasks → Close the program → Run again.
+
+Check whether tasks are loaded from the file.
+
+**Input Validation Test**
+
+Enter invalid dates, empty titles, wrong IDs.
+
+System must not crash and should display proper error messages.
+
+**Boundary Testing**
+
+Add very long task names.
+
+Add maximum number of tasks.
+
+Ensure the system still works properly.
 
