@@ -72,18 +72,18 @@ This acts like a dashboard for the user.
 Java
 Used for implementing OOP concepts, classes, interfaces, enums, and file-handling.
 
-Concepts
+**Concepts**
 
 Object-Oriented Programming (OOP)
 Encapsulation, classes, objects, and modular design.
 
-Enums
+**Enums**
 Used for defining fixed priority types.
 
-Collections
+**Collections**
 ArrayList for storing multiple tasks.
 
-File I/O
+**File I/O**
 Reading and writing tasks to a .txt file for persistent storage.
 
 **Tools**
@@ -104,4 +104,25 @@ Git & GitHub for version control
 
 ```java Main```
 
+**Testing** 
+
+The Personal Task Manager was tested manually using different inputs to ensure all features work correctly. All tests were performed on Windows using VS Code and JDK 17. 
+
+
+**Test Case Summary**
+1. Tested adding, editing, deleting, and completing tasks → working correctly.
+
+2. Verified task filtering by priority, today’s date, and overdue tasks → all passed.
+
+3. Summary report displayed correct task counts → passed.
+
+4. File I/O tested by restarting program → tasks loaded successfully.
+
+5. Invalid inputs (wrong date, wrong menu option) handled safely.
+
+6. No crashes or logical errors found during testing.
+   
+**Testing Conclusion**
+
+All features function correctly, including task creation, editing, deletion, filtering, and file storage. The program handles errors well and is stable for use.
 
